@@ -1,0 +1,9 @@
+.calendar{
+    display:grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-auto-rows: 20vh;
+}
+.calendar>div{
+    padding:1em;
+    border:solid black 0.5vh;
+}
