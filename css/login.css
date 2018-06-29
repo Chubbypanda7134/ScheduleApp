@@ -1,7 +1,28 @@
 nav{
   background-color: black;
 }
+body{
+  font-family:"Comic Sans MS";
+}
 *{
   margin: 0;
   padding: 0;
+}
+#signup-area{
+  margin: auto;
+  text-align: center;
+}
+#btnSignUp a{
+  text-decoration: none;
+}
+button{
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  height: 8vh;
+  width: 50vh;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family:"Comic Sans MS";
 }
