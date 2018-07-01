@@ -12,39 +12,43 @@
     <!-- <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-firestore.js"></script> -->
     <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-messaging.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-functions.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyBiPEsbVeOpppIEYFUeZYlBXzNinARr09w",
-    authDomain: "cac2018-648ca.firebaseapp.com",
-    databaseURL: "https://cac2018-648ca.firebaseio.com",
-    projectId: "cac2018-648ca",
-    storageBucket: "cac2018-648ca.appspot.com",
-    messagingSenderId: "275374546726"
-  };
-  firebase.initializeApp(config);
-  </script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBiPEsbVeOpppIEYFUeZYlBXzNinARr09w",
+        authDomain: "cac2018-648ca.firebaseapp.com",
+        databaseURL: "https://cac2018-648ca.firebaseio.com",
+        projectId: "cac2018-648ca",
+        storageBucket: "cac2018-648ca.appspot.com",
+        messagingSenderId: "275374546726"
+      };
+      firebase.initializeApp(config);
+    </script>
   </head>
   <body>
     <nav>
       <ul>
-          <li class="navLogo">
-            <a href="?"><img src="?" alt="?"></a>
+        <a href="?">
+          <li id="navLogo">
+            <img src="https://cdn4.iconfinder.com/data/icons/small-n-flat/24/calendar-512.png" alt="?" id='logo'>
           </li>
+        </a>
       </ul>
     </nav>
-    <div id="signup-area">
+    <header>
       <h2>Lorem Ipsum</h2>
-      <div id="login">
-        <input type="email" name="email" id="inEmail" placeholder=" Email address"><br><br>
-        <input type="password" name="password" id="inPassword" placeholder=" Password"><br><br>
-        <div class="btn-container">
-          <button type="submit" id="btnLogin" class="login-btn">
-            Log In
-          </button>
-        </div><br>
-        <p>Not registered? <a href="signup.html">Create an account</a></p>
-      </div>
+    </header>
+    <div id="login-area">
+      <input type="email" name="email" id="inEmail" required placeholder=" Email address">
+      <input type="password" name="password" id="inPassword" required placeholder=" Password">
+      <div class="btn-container">
+        <button type="submit" id="btnLogin" class="login-btn">
+          Log In
+        </button>
+        </div>
+      <p>Not registered?
+        <a href="signup.html">Create an account</a>
+      </p>
     </div>
   </body>
 </html>

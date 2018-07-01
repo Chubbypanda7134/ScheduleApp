@@ -7,19 +7,21 @@ body{
 }
 nav{
   background-color: #e7717d;
-  padding-bottom: 1vw;
+  padding-bottom: 1vh;
+}
+#logo{
+  height: 8vh;
 }
 h2{
   font-size:4.5vw;
   color:#000000;
-}
-#signup-area{
-  margin: auto;
   text-align: center;
 }
-#login{
+#login-area{
+  margin: auto;
+  text-align: center;
   background-color: white;
-  padding-bottom: 6vw;
+  padding-bottom: 2vw;
   padding-top:2vw;
   width:33vw;
   margin: auto;
@@ -27,10 +29,11 @@ h2{
 }
 input{
   border: none;
-  width:50vh;
+  width:27vw;
   height:8vh;
-  font-size:1.3vw;
+  font-size:1.6vw;
   background-color: #dcdcdc;
+  margin-bottom:3.6vh;
 }
 button{
   display: flex;
@@ -39,7 +42,7 @@ button{
   border: none;
   outline: none;
   height: 10vh;
-  width: 50vh;
+  width: 27vw;
   border-radius: 10px;
   cursor: pointer;
   font-size: 1.6vw;
@@ -60,4 +63,6 @@ p a{
 }
 p{
   color: #696969;
+  padding-top: 3.6vh;
+  font-size: 1.6vw;
 }
