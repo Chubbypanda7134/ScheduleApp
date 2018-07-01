@@ -22,7 +22,7 @@ btnSignUp.addEventListener('click', e => {
     else{
         let firstName = document.getElementById("txtFirstName");
         let lastName = document.getElementById("txtLastName");
-        let email = document.getElementById("txtEmail").value;
+        let email = document.getElementById("emailForm").value;
         let password = document.getElementById("password").value;
         let userObj ={
             firstName: firstName.value,
