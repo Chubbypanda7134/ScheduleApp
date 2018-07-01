@@ -2,18 +2,6 @@
 <html lang="en" dir="ltr">
   <head>
     <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
-    <script>
-      // Initialize Firebase
-      var config = {
-        apiKey: "AIzaSyBiPEsbVeOpppIEYFUeZYlBXzNinARr09w",
-        authDomain: "cac2018-648ca.firebaseapp.com",
-        databaseURL: "https://cac2018-648ca.firebaseio.com",
-        projectId: "cac2018-648ca",
-        storageBucket: "cac2018-648ca.appspot.com",
-        messagingSenderId: "275374546726"
-      };
-      firebase.initializeApp(config);
-    </script>
     <link href='../css/signup.css' type='text/css' rel='stylesheet' />
     <meta charset="utf-8">
     <title>Sign up</title>
@@ -33,16 +21,18 @@
     </header>
     <div id="signup-box">
       <div>
-        <input class="nameForm" type="text" name="firstName" placeholder='First Name' required/>
-        <input class="nameForm" type="text" name="lastName" placeholder="Last Name" required />
+        <input id = "txtFirstName" class="nameForm" type="text" name="firstName" placeholder='First Name' required/>
+        <input id = "txtLastName" class="nameForm" type="text" name="lastName" placeholder="Last Name" required />
       </div>
       <div>
-        <input id='emailForm' type='text' name='email' placeholder='Email' required />
+        <input id = "txtEmail" class='emailForm' type='text' name='email' placeholder='Email' required />
       </div>
       <div>
-        <input class='passwordForm' type='password' name='password' placeholder="Password" required />
+        <input id="password" class='passwordForm' type='password' name='password' placeholder="Password" required />
         <input class='passwordForm' type='password' name='password' placeholder="Confirm Password" required />
       </div>
+        <button id = "SignUp">Sign Up</button>
     </div>
+    <script src="../javascript/SignUp.js"></script>
   </body>
 </html>
