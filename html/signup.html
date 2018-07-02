@@ -33,15 +33,20 @@
     </header>
     <div id="signup-box">
       <div>
-        <input class="nameForm" type="text" name="firstName" placeholder=' First Name' required/>
-        <input class="nameForm" type="text" name="lastName" placeholder=" Last Name" required />
+        <input style="float:left;" class="inline" type="text" name="firstName" placeholder='First Name' required/>
+        <input style="float:right;" class="inline" type="text" name="lastName" placeholder="Last Name" required />
       </div>
       <div>
-        <input id='emailForm' type='text' name='email' placeholder=' Email' required />
+        <input class='block' id='emailForm' type='text' name='email' placeholder='Email' required />
       </div>
       <div>
-        <input class='passwordForm' type='password' name='password' placeholder=" Password" required />
-        <input class='passwordForm' type='password' name='password' placeholder=" Confirm Password" required />
+        <input style="float:left;" class='inline' type='password' name='password' placeholder="Password" required />
+        <input style="float:right;" class='inline' type='password' name='passwordConf' placeholder="Confirm Password" required />
+        <!--
+            message to keith:
+              Use javascrupt to make sure that confirm password matches with password or else
+              make a message appear saying that its different and block the from submitting form
+        -->
       </div>
       <div id="btn-container">
         <button type="submit" id="btnCreateAcc" class="button-acc">Create</button>
