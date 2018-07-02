@@ -73,7 +73,7 @@ for(let i=1;i<=monthDays;i++){ //labeled dates
     document.getElementById(`${startPoint}`).innerHTML=`${i}`;
     startPoint++;
 }
-for(let z=startPoint;z<=35;z++){ //boxes after the last available day will be gray
+for(let z=startPoint;z<=42;z++){ //boxes after the last available day will be gray
     document.getElementById(`${z}`).style.backgroundColor="gray";
 }
 
