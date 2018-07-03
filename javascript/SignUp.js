@@ -12,7 +12,7 @@ let FIREBASE_DATABASE = firebase.database();
 let FIREBASE_AUTH = firebase.auth();
 
 
-let btnSignUp = document.getElementById("SignUp");
+let btnSignUp = document.getElementById("btnCreateAcc");
 
 btnSignUp.addEventListener('click', e => {
     let pws = document.querySelectorAll(".passwordForm");
