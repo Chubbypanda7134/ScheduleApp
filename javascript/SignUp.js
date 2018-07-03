@@ -32,6 +32,7 @@ btnSignUp.addEventListener('click', e => {
             FIREBASE_DATABASE.ref('users/' + user.uid).set(userObj).then(
                 function() {
                     console.log('User data successfully stored')
+                    window.location = "../html/login.html";
                 }).catch(function(error) {
                     console.log(error);
              });
